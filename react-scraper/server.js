@@ -39,7 +39,7 @@ app.get('/api/scrape', (req, res) => {
 app.post('/api/scrape', (req, res) => {
   debug('Scrape starting...');
 
-  axios.get('https://old.reddit.com/r/nfl')
+  axios.get('https://old.reddit.com/r/webdev')
     .then(res => {
       debug('we got results');
 

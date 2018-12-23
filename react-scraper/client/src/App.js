@@ -18,13 +18,12 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-      <h2>Sports News</h2>
         <ul>
           {
             this.state.scrapeResults.map(r => (
               <li key={r.title}>
-              <br></br>
-                <a href={r.link} >{r.title}</a>
+                <p>Title: {r.title}</p>
+                <a href={r.link} >Click Me!</a>
               </li>
             ))
           }
