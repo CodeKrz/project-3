@@ -18,12 +18,14 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
+      <h1>Sports</h1>
+      <hr></hr>
         <ul>
           {
             this.state.scrapeResults.map(r => (
               <li key={r.title}>
-                <p>Title: {r.title}</p>
-                <a href={r.link} >Click Me!</a>
+              <br></br>
+                <a href={r.link} >{r.title}</a>
               </li>
             ))
           }
